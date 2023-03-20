@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" id="Y6W-OH-hqX" customClass="SelectionViewController" customModule="StoryboardInstant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="SelectionView" customModule="StoryboardInstant" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-cj-sZ9">
+                                <rect key="frame" x="20" y="419.5" width="374" height="57.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGz-bO-VdW">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="57.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" subtitle="Please select" titleAlignment="center">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Dog">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectDog:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="91d-Ej-Vay"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-xL-nOc">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="57.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" subtitle="Please select" titleAlignment="center">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Cat">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectCat:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IzI-tg-Aja"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FZ3-cj-sZ9" secondAttribute="trailing" constant="20" id="Fa9-DY-Gwz"/>
+                            <constraint firstItem="FZ3-cj-sZ9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="GAg-FW-g9L"/>
+                            <constraint firstItem="FZ3-cj-sZ9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YYh-L3-9fU"/>
+                            <constraint firstItem="FZ3-cj-sZ9" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="u9T-kl-wfJ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="catButton" destination="iFD-xL-nOc" id="Jof-yN-CSr"/>
+                            <outlet property="dogButton" destination="wGz-bO-VdW" id="zW3-kc-wrw"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
