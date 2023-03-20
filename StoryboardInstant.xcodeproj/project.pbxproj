@@ -131,17 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				3D7FBF0A28F1F1A4005CD40C /* Protocols */,
-				3D7FBF0928F1F19B005CD40C /* Extensions */,
 				3D7FBF1328F1F870005CD40C /* Storyboards.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		3D7FBF0928F1F19B005CD40C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3D7FBF0A28F1F1A4005CD40C /* Protocols */ = {
